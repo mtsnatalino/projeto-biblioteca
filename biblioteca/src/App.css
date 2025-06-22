@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: #6b4f3b;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 a {
+  color: #fdfaf5;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu div {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fdfaf5;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: #8b5e3c;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+
+.conteudo {
+  padding: 40px;
+  font-family: 'Georgia', serif;
+  background-color: #f5f3f0;
+  color: #2e2e2e;
+}
+
+form {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(60, 42, 33, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #3b2f2f;
+  border-left: 6px solid #8b4513;
+  padding-left: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 1px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #8b4513;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f6f2;
+}
+
+ 
+/* home */
+.conteudos {
+  padding: 60px;
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf5;
+  color: #3b2f2f;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #8b4513;
+  border-bottom: 2px solid #8b4513;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+li {
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4b2e1e;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  background-color: #d2b48c;
+  color: #fff;
+}
