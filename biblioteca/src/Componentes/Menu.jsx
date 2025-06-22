@@ -8,8 +8,8 @@ export default function Menu() {
       <div>
         <a href="/cadastro">Cadastro de Clientes</a>
         <a href="/cadastroLivros">Cadastro de Livros</a>
-        <a href="/emprestimos">Empréstimos</a>
         <a href="/consulta">Consulta Geral</a>
+        <a href="/emprestimos">Cadastro de Empréstimos</a>
       </div>
     </div>
   );

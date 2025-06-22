@@ -9,6 +9,12 @@ export default function Emprestimo() {
   const [resultado, setResultado] = useState("");
 
   async function cadastrar() {
+
+    if (!codigoCliente || !codigoLivro || !dataEmprestimo || !dataDevolucao) {
+      setResultado("Preencha todos os campos antes de cadastrar.");
+      return;
+    }
+    
     try {
       setResultado("..Aguarde..");
       const response = await axios.post("http://localhost:3001/emprestimos", {

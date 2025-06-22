@@ -250,7 +250,6 @@ app.post("/emprestimos", (req, res) => {
   );
 });
 
-// Consultar todos os empréstimos com nome do cliente e título do livro
 app.get("/emprestimos", (req, res) => {
   const sql = `
     SELECT 
@@ -274,7 +273,6 @@ app.get("/emprestimos", (req, res) => {
   });
 });
 
-// Consultar um empréstimo específico por código
 app.get("/emprestimos/:codigo", (req, res) => {
   const { codigo } = req.params;
 

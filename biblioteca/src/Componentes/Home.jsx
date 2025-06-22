@@ -11,11 +11,10 @@ export default function Home() {
           <a href="/cadastroLivros">Cadastro de novos Livros</a>
         </li>
         <li>
-          <a href="/emprestimos">Emprestimos</a>
-        </li>
-
-        <li>
           <a href="/consulta">Consulta Geral</a>
+        </li>
+        <li>
+          <a href="/emprestimos">Cadastro de Empréstimos</a>
         </li>
       </ul>
     </div>

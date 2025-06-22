@@ -9,6 +9,12 @@ export default function Cadastro() {
   const [resultado, setResultado] = useState();
 
   async function cadastrar() {
+
+    if (!nome || !cpf || !email || !telefone) {
+      setResultado("Preencha todos os campos antes de cadastrar.");
+      return;
+    }
+    
     try {
       setResultado("..Aguarde..");
       const response = await axios.post("http://localhost:3001/clientes", {
