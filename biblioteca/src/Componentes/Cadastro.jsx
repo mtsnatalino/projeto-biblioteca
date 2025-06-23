@@ -29,6 +29,7 @@ export default function Cadastro() {
       setCpf("");
       setEmail("");
       setTelefone("");
+      
     } catch (erro) {
       setResultado(erro.response?.data?.error || "Erro desconhecido");
     }

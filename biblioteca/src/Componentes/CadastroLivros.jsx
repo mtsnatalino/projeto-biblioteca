@@ -8,12 +8,11 @@ export default function Cadastro() {
   const [resultado, setResultado] = useState();
 
   async function cadastrar() {
-
-     if (!titulo || !autor || !editora) {
+    if (!titulo || !autor || !editora) {
       setResultado("Preencha todos os campos antes de cadastrar.");
       return;
     }
-    
+
     try {
       setResultado("..Aguarde..");
       const response = await axios.post("http://localhost:3001/livros", {
@@ -22,6 +21,11 @@ export default function Cadastro() {
         editora,
       });
       setResultado(response.data.message);
+
+      setTitulo("");
+      setAutor("");
+      setEditora("");
+
     } catch (erro) {
       setResultado(erro.response?.data?.error || "Erro desconhecido");
     }

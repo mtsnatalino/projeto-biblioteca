@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 export default function ExcluirLivro() {
   const { codigo } = useParams();
   const navigate = useNavigate();
-  const [livros, setLivros] = useState([]);
+  const [livros, setLivros] = useState({});
 
   async function consultarPorCodigo(codigo) {
     try {
